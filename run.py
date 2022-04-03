@@ -18,7 +18,7 @@ def playerInput(board):
         board[inp-1] = currentPlayer
     else: 
         print("Erro!")
-        
+
 # check for win or tie
 def checkHorizontle(board):
     global winner
@@ -79,9 +79,26 @@ def checkIfTie(board):
         printBoard(board)
         print("It is a tie!")
         gameRunning = False
+
+def checkWin():
+    if checkDiag(board) or checkHorizontle(board) or checkRow(board):
+        print(f"The Winner is {winner}")
+
 # swith the player 
+def switchPlayer():
+    global currentPlayer
+    if currentPlayer == "X":
+        currentPlayer = "O"
+    else:
+        currentPlayer = "X"
+
 # check for win or tie again 
 
 while gameRunning:
     printBoard(board)
     playerInput(board)
+    checkIfWin(board)
+    checkIfTie(board)
+    switchPlayer()
+    checkIfWin(board)
+    checkIfTie(board)
