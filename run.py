@@ -1,23 +1,28 @@
+from random import randint
 board = ["-", "-", "-",
-        "-", "-", "-",
-        "-", "-", "-"]
+         "-", "-", "-",
+         "-", "-", "-"]
 currentPlayer = "X"
 winner = None
-gameRunning = True 
+gameRunning = True
 
 # print the game board
+
+
 def printBoard(board):
     print(board[0] + " | " + board[1] + " | " + board[2])
-    print(board[3] + " | " + board[4] + " | " + board[5]) 
+    print(board[3] + " | " + board[4] + " | " + board[5])
     print(board[6] + " | " + board[7] + " | " + board[8])
+
 
 # take player input
 def playerInput(board):
     inp = int(input("Enter a number 1-9: "))
-    if inp >= 1 and inp <= 9 and board[inp-1]  == "-":
+    if inp >= 1 and inp <= 9 and board[inp-1] == "-":
         board[inp-1] = currentPlayer
-    else: 
+    else:
         print("Erro!")
+
 
 # check for win or tie
 def checkHorizontle(board):
@@ -31,6 +36,7 @@ def checkHorizontle(board):
     elif board[6] == board[7] == board[8] and board[6] != "-":
         winner = board[6]
         return True
+
 
 def checkRow(board):
     global winner
@@ -80,11 +86,13 @@ def checkIfTie(board):
         print("It is a tie!")
         gameRunning = False
 
+
 def checkWin():
     if checkDiag(board) or checkHorizontle(board) or checkRow(board):
         print(f"The Winner is {winner}")
 
-# swith the player 
+
+# swith the player
 def switchPlayer():
     global currentPlayer
     if currentPlayer == "X":
@@ -92,7 +100,7 @@ def switchPlayer():
     else:
         currentPlayer = "X"
 
-# check for win or tie again 
+# check for win or tie again
 
 while gameRunning:
     printBoard(board)
@@ -102,3 +110,4 @@ while gameRunning:
     switchPlayer()
     checkIfWin(board)
     checkIfTie(board)
+
