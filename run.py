@@ -1,113 +1,126 @@
-from random import randint
-board = ["-", "-", "-",
-         "-", "-", "-",
-         "-", "-", "-"]
-currentplayer = "X"
-winner = None
-gamerunning = True
-
 # print the game board
-
-
 def printboard(board):
+    """ Print the dashboar using the board parameter
+    """
     print(board[0] + " | " + board[1] + " | " + board[2])
     print(board[3] + " | " + board[4] + " | " + board[5])
     print(board[6] + " | " + board[7] + " | " + board[8])
 
 
 # take player input
-def playerinput(board):
+def playerinput(input_board, player):
+    """
+    """
     inp = int(input("Enter a number 1-9: "))
-    if inp >= 1 and inp <= 9 and board[inp-1] == "-":
-        board[inp-1] = currentplayer
+    if inp >= 1 and inp <= 9 and input_board[inp-1] == "-":
+        input_board[inp-1] = player
     else:
         print("Erro!")
 
 
-# check for win or tie
-def checkhorizontle(board):
-    global winner
-    if board[0] == board[1] == board[2] and board[0] != "-":
-        winner = board[0]
-        return True
-    elif board[3] == board[4] == board[5] and board[3] != "-":
-        winner = board[3]
-        return True
-    elif board[6] == board[7] == board[8] and board[6] != "-":
-        winner = board[6]
-        return True
+def checkhorizontle(input_board):
+    """ check for win or tie
+    """
+    if input_board[0] == input_board[1] == input_board[2] and \
+            input_board[0] != "-":
+        return input_board[0]
+    elif input_board[3] == input_board[4] == input_board[5] and \
+            input_board[3] != "-":
+        return input_board[3]
+    elif input_board[6] == input_board[7] == input_board[8] and \
+            input_board[6] != "-":
+        return input_board[6]
+    return None
 
 
 def checkrow(board):
-    global winner
     if board[0] == board[3] == board[6] and board[0] != "-":
-        winner = board[0]
-        return True
+        return board[0]
     elif board[1] == board[4] == board[7] and board[1] != "-":
-        winner = board[1]
-        return True
+        return board[1]
     elif board[2] == board[5] == board[8] and board[2] != "-":
-        winner = board[3]
-        return True
+        return board[3]
+    return None
 
 
 def checkdiag(board):
-    global winner
     if board[0] == board[4] == board[8] and board[0] != "-":
-        winner = board[0]
-        return True
+        return board[0]
     elif board[2] == board[4] == board[6] and board[4] != "-":
-        winner = board[2]
-        return True
+        return board[2]
+    return None
 
 
-def checkIfwin(board):
-    global gamerunning
-    if checkhorizontle(board):
+def check_if_win(board):
+    """
+    """
+    if winner := checkhorizontle(board):
         printboard(board)
         print(f"The winner is {winner}!")
-        gamerunning = False
-
-    elif checkrow(board):
+        return False
+    elif winner := checkrow(board):
         printboard(board)
         print(f"The winner is {winner}!")
-        gamerunning = False
-
-    elif checkdiag(board):
+        return False
+    elif winner := checkdiag(board):
         printboard(board)
         print(f"The winner is {winner}!")
-        gamerunning = False
+        return False
+    return True
 
 
-def checkIftie(board):
-    global gamerunning
-    if "-" not in board:
-        printboard(board)
+def check_if_tie(input_board):
+    """
+    """
+    if "-" not in input_board:
+        printboard(input_board)
         print("It is a tie!")
-        gamerunning = False
+        return False
+    return True
 
 
-def checkwin():
-    if checkdiag(board) or checkhorizontle(board) or checkrow(board):
+def checkwin(input_board):
+    """
+    """
+    winner = checkdiag(input_board)
+    if winner := checkdiag(input_board):
+        print(f"The Winner is {winner}")
+    elif winner := checkhorizontle(input_board):
+        print(f"The Winner is {winner}")
+    elif winner := checkrow(input_board):
         print(f"The Winner is {winner}")
 
 
 # swith the player
-def switchplayer():
-    global currentplayer
-    if currentplayer == "X":
-        currentplayer = "O"
-    else:
-        currentplayer = "X"
+def switchplayer(player):
+    """ Switch player based on the currentplayer parameter
+    """
+    return "O" if player == "X" else "X"
 
 # check for win or tie again
 
-while gamerunning:
-    printboard(board)
-    playerinput(board)
-    checkIfwin(board)
-    checkIftie(board)
-    switchplayer()
-    checkIfwin(board)
-    checkIftie(board)
 
+def main():
+    """
+    """
+    board = ["-", "-", "-",
+             "-", "-", "-",
+             "-", "-", "-"]
+
+    currentplayer = "X"
+    gamerunning = True
+
+    while gamerunning:
+        printboard(board)
+        playerinput(board, currentplayer)
+        gamerunning = check_if_win(board)
+        if not gamerunning:
+            break
+        currentplayer = switchplayer(currentplayer)
+        gamerunning = check_if_win(board)
+        if not gamerunning:
+            break
+        gamerunning = check_if_tie(board)
+
+
+main()
