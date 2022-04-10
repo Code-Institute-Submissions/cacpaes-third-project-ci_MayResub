@@ -103,6 +103,17 @@ def switchplayer(player):
 def main():
     """
     """
+    board = ['     ' for i in range(9)]
+    print('Welcome to Tic Tac Toe!')
+    play = input("Do you want to play? (yes/no) ")
+    if play.lower() == "yes":
+        print("Let's play!")
+    elif play.lower() == "no":
+        print('See you next time!')
+        quit()
+    else:
+        print('Please choose yes/no to start or quit the game')
+
     board = ["-", "-", "-",
              "-", "-", "-",
              "-", "-", "-"]
