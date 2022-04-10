@@ -9,7 +9,7 @@ def printboard(board):
 
 # take player input
 def playerinput(input_board, player):
-    """
+    """ input to enter a number
     """
     inp = int(input("Enter a number 1-9: "))
     if inp >= 1 and inp <= 9 and input_board[inp-1] == "-":
@@ -18,6 +18,7 @@ def playerinput(input_board, player):
         print("Erro!")
 
 
+# check horizontal
 def checkhorizontle(input_board):
     """ check for win or tie
     """
@@ -33,7 +34,10 @@ def checkhorizontle(input_board):
     return None
 
 
+# check row
 def checkrow(board):
+    """check for win or tie
+    """
     if board[0] == board[3] == board[6] and board[0] != "-":
         return board[0]
     elif board[1] == board[4] == board[7] and board[1] != "-":
@@ -43,7 +47,10 @@ def checkrow(board):
     return None
 
 
+#  check diagonal
 def checkdiag(board):
+    """check for win or tie
+    """
     if board[0] == board[4] == board[8] and board[0] != "-":
         return board[0]
     elif board[2] == board[4] == board[6] and board[4] != "-":
@@ -51,8 +58,9 @@ def checkdiag(board):
     return None
 
 
+# check win
 def check_if_win(board):
-    """
+    """check who won
     """
     if winner := checkhorizontle(board):
         printboard(board)
@@ -69,8 +77,9 @@ def check_if_win(board):
     return True
 
 
+# check tie
 def check_if_tie(input_board):
-    """
+    """check for tie
     """
     if "-" not in input_board:
         printboard(input_board)
@@ -80,7 +89,7 @@ def check_if_tie(input_board):
 
 
 def checkwin(input_board):
-    """
+    """check winner
     """
     winner = checkdiag(input_board)
     if winner := checkdiag(input_board):
@@ -97,21 +106,17 @@ def switchplayer(player):
     """
     return "O" if player == "X" else "X"
 
-# check for win or tie again
 
-
+# run the game
 def main():
-    """
+    """Instruction to the game
     """
     board = ['     ' for i in range(9)]
     print('Welcome to Tic Tac Toe!')
     print('____________Instruction____________')
-    print('* player needs to choose a position between 1 - 9.')
-    print('* player will play against a friend.')
-    print('* At the end of the game, who ever wins,')
-    print(' would choose to play again or to exist the game.')
-    print('* If no one wins and the board run out of space would be Draw!')
-    print('* you will be asked to run the game again.')
+    print('* Player needs to choose a position between 1 - 9.')
+    print('* Player will play against a friend.')
+    print('* If no one wins and the board run out of space would be tie!')
     play = input("Do you want to play? (yes/no) ")
     if play.lower() == "yes":
         print("Let's play!")
