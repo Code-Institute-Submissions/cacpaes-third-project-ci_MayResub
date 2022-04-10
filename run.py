@@ -105,6 +105,13 @@ def main():
     """
     board = ['     ' for i in range(9)]
     print('Welcome to Tic Tac Toe!')
+    print('____________Instruction____________')
+    print('* player needs to choose a position between 1 - 9.')
+    print('* player will play against a friend.')
+    print('* At the end of the game, who ever wins,')
+    print(' would choose to play again or to exist the game.')
+    print('* If no one wins and the board run out of space would be Draw!')
+    print('* you will be asked to run the game again.')
     play = input("Do you want to play? (yes/no) ")
     if play.lower() == "yes":
         print("Let's play!")
