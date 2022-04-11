@@ -1,4 +1,3 @@
-# print the game board
 def printboard(board):
     """ Print the dashboar using the board parameter
     """
@@ -7,7 +6,6 @@ def printboard(board):
     print(board[6] + " | " + board[7] + " | " + board[8])
 
 
-# take player input
 def playerinput(input_board, player):
     """ input to enter a number
     """
@@ -18,7 +16,6 @@ def playerinput(input_board, player):
         print("Erro!")
 
 
-# check horizontal
 def checkhorizontle(input_board):
     """ check for win or tie
     """
@@ -34,7 +31,6 @@ def checkhorizontle(input_board):
     return None
 
 
-# check row
 def checkrow(board):
     """check for win or tie
     """
@@ -47,7 +43,6 @@ def checkrow(board):
     return None
 
 
-#  check diagonal
 def checkdiag(board):
     """check for win or tie
     """
@@ -58,7 +53,6 @@ def checkdiag(board):
     return None
 
 
-# check win
 def check_if_win(board):
     """check who won
     """
@@ -77,7 +71,6 @@ def check_if_win(board):
     return True
 
 
-# check tie
 def check_if_tie(input_board):
     """check for tie
     """
@@ -100,14 +93,12 @@ def checkwin(input_board):
         print(f"The Winner is {winner}")
 
 
-# swith the player
 def switchplayer(player):
     """ Switch player based on the currentplayer parameter
     """
     return "O" if player == "X" else "X"
 
 
-# run the game
 def main():
     """Instruction to the game
     """
