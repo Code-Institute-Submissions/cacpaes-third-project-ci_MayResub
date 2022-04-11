@@ -1,3 +1,7 @@
+""" Tic Tac Toe
+"""
+
+
 def printboard(board):
     """ Print the dashboar using the board parameter
     """
@@ -56,18 +60,24 @@ def checkdiag(board):
 def check_if_win(board):
     """check who won
     """
-    if winner := checkhorizontle(board):
+    winner = checkhorizontle(board)
+    if winner:
         printboard(board)
         print(f"The winner is {winner}!")
         return False
-    elif winner := checkrow(board):
+    
+    winner = checkrow(board)
+    if winner:
         printboard(board)
         print(f"The winner is {winner}!")
         return False
-    elif winner := checkdiag(board):
+
+    winner = checkdiag(board)
+    if winner:
         printboard(board)
         print(f"The winner is {winner}!")
         return False
+
     return True
 
 
@@ -79,18 +89,6 @@ def check_if_tie(input_board):
         print("It is a tie!")
         return False
     return True
-
-
-def checkwin(input_board):
-    """check winner
-    """
-    winner = checkdiag(input_board)
-    if winner := checkdiag(input_board):
-        print(f"The Winner is {winner}")
-    elif winner := checkhorizontle(input_board):
-        print(f"The Winner is {winner}")
-    elif winner := checkrow(input_board):
-        print(f"The Winner is {winner}")
 
 
 def switchplayer(player):
