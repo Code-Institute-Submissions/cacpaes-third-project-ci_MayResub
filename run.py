@@ -20,39 +20,52 @@ def playerinput(input_board, player):
         print("Erro!")
 
 
-def checkhorizontle(input_board):
+def check_row(index, board):
+    """ Check row
+    """
+    if board[index] == board[index + 1] and \
+            board[index + 1] == board[index + 2] and board[index] != "-":
+        return board[index]
+
+    return None
+
+
+def check_col(index, board):
+    """
+    """
+    if board[index] == board[index + 3] and \
+            board[index + 3] == board[index + 6] and board[index] != "-":
+        return board[index]
+
+    return None
+
+
+def check_rows(input_board):
     """ check for win or tie
     """
-    if input_board[0] == input_board[1] == input_board[2] and \
-            input_board[0] != "-":
-        return input_board[0]
-    elif input_board[3] == input_board[4] == input_board[5] and \
-            input_board[3] != "-":
-        return input_board[3]
-    elif input_board[6] == input_board[7] == input_board[8] and \
-            input_board[6] != "-":
-        return input_board[6]
+    for index in range(0, 7, 3):
+        result = check_row(index, input_board)
+        if result:
+            return result
     return None
 
 
-def checkrow(board):
+def check_cols(board):
     """check for win or tie
     """
-    if board[0] == board[3] == board[6] and board[0] != "-":
-        return board[0]
-    elif board[1] == board[4] == board[7] and board[1] != "-":
-        return board[1]
-    elif board[2] == board[5] == board[8] and board[2] != "-":
-        return board[3]
+    for index in range(0, 3):
+        result = check_col(index, board)
+        if result:
+            return result
     return None
 
 
-def checkdiag(board):
+def check_diagonal(board):
     """check for win or tie
     """
-    if board[0] == board[4] == board[8] and board[0] != "-":
+    if board[0] == board[4] and board[4] == board[8] and board[0] != "-":
         return board[0]
-    elif board[2] == board[4] == board[6] and board[4] != "-":
+    elif board[2] == board[4] and board[4] == board[6] and board[4] != "-":
         return board[2]
     return None
 
@@ -60,19 +73,19 @@ def checkdiag(board):
 def check_if_win(board):
     """check who won
     """
-    winner = checkhorizontle(board)
+    winner = check_rows(board)
     if winner:
         printboard(board)
         print(f"The winner is {winner}!")
         return False
     
-    winner = checkrow(board)
+    winner = check_cols(board)
     if winner:
         printboard(board)
         print(f"The winner is {winner}!")
         return False
 
-    winner = checkdiag(board)
+    winner = check_diagonal(board)
     if winner:
         printboard(board)
         print(f"The winner is {winner}!")
