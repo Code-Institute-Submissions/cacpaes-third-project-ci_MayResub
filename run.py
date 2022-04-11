@@ -78,7 +78,6 @@ def check_if_win(board):
         printboard(board)
         print(f"The winner is {winner}!")
         return False
-    
     winner = check_cols(board)
     if winner:
         printboard(board)
