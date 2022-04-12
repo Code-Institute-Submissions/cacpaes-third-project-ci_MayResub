@@ -118,7 +118,7 @@ def main():
     print('* Player needs to choose a position between 1 - 9.')
     print('* Player will play against a friend.')
     print('* If no one wins and the board run out of space would be tie!')
-    print('* Choose the same number, the turn passes to the opponent.!')
+    print('* If the same number is chosen, the player passes his turn!')
     print('* To play again just click on RUN PROGRAM!')
     play = input("Do you want to play? (yes/no) ")
     if play.lower() == "yes":
