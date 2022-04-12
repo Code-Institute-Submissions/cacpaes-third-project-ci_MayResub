@@ -1,31 +1,168 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1>Tic_Tac_Toe</h1>
+<p>Welcome to my page... Have fun playing fun game. This is a one page game designed using the Python language. 
 
-Welcome Carlos Alberto De Carvalho Paes,
+Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the more popular languages. </P>
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+[View the game on heroku](https://tictactoe-cacpaes.herokuapp.com/)
 
-## Reminders
+![Untitled]()
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+<h2>Content Navegation</h2>
 
-## Creating the Heroku app
+* [](#)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+* [](#)
 
-1. `heroku/python`
-2. `heroku/nodejs`
+  - [](#)
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+  - [](#)
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+  - [](#)
 
-Connect your GitHub repository and deploy as normal.
+  - [Site owner goals](#site-owner-goals)
 
-## Constraints
+* [Technologies Used](#technologies-used)
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+  - [Resources](#resources)
 
------
-Happy coding!
+* [Features](#features)
+
+  - [Existing Features](#existing-features)
+
+  - [Resources to be implemented](#resources-to-be-implemented)
+
+* [Testing](#testing)
+
+  - [Project Issues](#project-issues)
+
+* [Deployment](#deployment)
+
+* [Credits](#credits)
+
+  - [Content](#content)
+
+  - [Media](#media)
+
+* [Acknowledgements](#acknowledgements)
+
+
+<h2>UX/UI Design</h2>
+
+<h3>Expected traffic to this site:</h3>
+
+* 
+
+* 
+
+* 
+
+<h3>Visitors to this site are looking for:</h3>
+
+* 
+
+* 
+
+<h3>This project is the best way to help them achieve these things because:</h3>
+
+* 
+
+* 
+
+<h3>Site owner goals</h3>
+
+*
+
+* 
+
+* 
+
+* 
+
+<h2>Technologies Used</h2>
+
+* []() 
+
+*
+
+* 
+
+* 
+
+* 
+
+<h3>Resources</h3>
+
+* Code Institute Course Content - Main source of fundamental knowledge.
+
+* 
+
+*
+
+
+<h2>Features</h2>
+
+<p>.</p>
+
+<h3>Existing Features</h3>
+
+* 
+
+*
+
+* 
+
+* 
+
+*
+
+*
+
+* 
+
+<h3>Resources to be implemented</h3>
+
+* 
+
+*
+
+<h2>Testing</h2>
+
+* []()
+
+<h3>Project Issues</h3>
+
+*
+
+<h2>Deployment</h2>
+
+<p>The deployment process was made based on learnt on User Centric Frontend Development Git classes:</p>
+
+* 
+
+* 
+
+* 
+
+* 
+
+* 
+
+<h2>Credits</h2>
+
+* [Code Institute](https://codeinstitute.net/ie/) 
+
+<h3>Content</h3>
+
+*
+
+* 
+
+<h3>Media</h3>
+
+* 
+
+<h2>Acknowledgements</h2>
+
+* Code Institute for all the support.
+
+* 
