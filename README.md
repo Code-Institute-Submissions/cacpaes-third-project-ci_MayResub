@@ -9,7 +9,7 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 
 <h2>Content Navegation</h2>
 
-* [](#)
+*  [](#)
 
 * [](#)
 
