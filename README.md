@@ -3,7 +3,7 @@
 
 Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the more popular languages. </P>
 
-[View the game on heroku](https://tictactoe-cacpaes.herokuapp.com/)
+[View the game on HEROKU](https://tictactoe-cacpaes.herokuapp.com/)
 
 ![Untitled]()
 
