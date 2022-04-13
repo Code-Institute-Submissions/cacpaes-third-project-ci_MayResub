@@ -3,7 +3,7 @@
 
 Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the more popular languages. </P>
 
-[View the game on HEROKU](https://tictactoe-cacpaes.herokuapp.com/)
+[View the game on Heroku](https://tictactoe-cacpaes.herokuapp.com/)
 
 ![Responsive](https://user-images.githubusercontent.com/93129370/163144374-d2c085b5-146e-4b5b-9854-0ff7be24b685.png)
 
@@ -57,8 +57,17 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 
 
 <h2>Testing</h2>
+<h5>I have manually tested this project by doing the following:</h5>
 
-* The game was tested on [PEP8](http://pep8online.com/checkresult).
+* Passed the code through a PEP8 linter and confirmed there are no problems
+* Tested in my local terminal and the Conde Institute Heroku terminal
+
+<h3> Validator Testing </h3>
+
+* PEP8 
+   - No erros were returned from PEP8online.com
+
+* The game was tested on [PEP8](http://pep8online.com/).
 ![PEP8](https://user-images.githubusercontent.com/93129370/163272926-cd497f78-fb65-41d2-9e5a-1b0d1a214422.png)
 
 
