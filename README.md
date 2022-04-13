@@ -5,7 +5,7 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 
 [View the game on HEROKU](https://tictactoe-cacpaes.herokuapp.com/)
 
-![Untitled](![Responsive](https://user-images.githubusercontent.com/93129370/163144374-d2c085b5-146e-4b5b-9854-0ff7be24b685.png)
+![Responsive](https://user-images.githubusercontent.com/93129370/163144374-d2c085b5-146e-4b5b-9854-0ff7be24b685.png)
 )
 
 <h2>Content Navegation</h2>
