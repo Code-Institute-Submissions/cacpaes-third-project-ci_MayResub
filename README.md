@@ -70,23 +70,17 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 ![PEP8](https://user-images.githubusercontent.com/93129370/163272926-cd497f78-fb65-41d2-9e5a-1b0d1a214422.png)
 
 
-<h3>Project Issues</h3>
-
-*
-
 <h2>Deployment</h2>
 
-<p>The deployment process was made based on learnt on User Centric Frontend Development Git classes:</p>
 
-* 
+* Sign up/ login to [Heroku](https://id.heroku.com/login).
 
-* 
+* Set the buildbacks to Python and NodeJs.
 
-* 
+* Link Heroku app to repositry.
 
-* 
+* click Deploy.
 
-* 
 
 <h2>Credits</h2>
 
