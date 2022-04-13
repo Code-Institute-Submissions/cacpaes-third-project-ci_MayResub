@@ -21,62 +21,10 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 *  Keep training. Contrary to what many think, tic-tac-toe is not just about luck. There are several strategies that optimize player skills. Keep training to learn how to use some of them and win (almost) every match.
 
 
-<h2>UX/UI Design</h2>
-
-<h3>Expected traffic to this site:</h3>
-
-* 
-
-* 
-
-* 
-
-<h3>Visitors to this site are looking for:</h3>
-
-* 
-
-* 
-
-<h3>This project is the best way to help them achieve these things because:</h3>
-
-* 
-
-* 
-
-<h3>Site owner goals</h3>
-
-*
-
-* 
-
-* 
-
-* 
-
-<h2>Technologies Used</h2>
-
-* []() 
-
-*
-
-* 
-
-* 
-
-* 
-
-<h3>Resources</h3>
-
-* Code Institute Course Content - Main source of fundamental knowledge.
-
-* 
-
-*
-
-
 <h2>Features</h2>
 
-<p>.</p>
+* Game Instruction, as is the very important to run any game to have a clear instructions for the palyer.
+![Instruction](https://user-images.githubusercontent.com/93129370/163263691-d413b1c0-3f7f-4a08-8965-5d63ff91796a.png)
 
 <h3>Existing Features</h3>
 
