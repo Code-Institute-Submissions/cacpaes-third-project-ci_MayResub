@@ -58,7 +58,7 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 
 <h2>Testing</h2>
 
-* The game was tested on [PEP8](http://pep8online.com/).
+* The game was tested on [PEP8](http://pep8online.com/checkresult).
 ![PEP8](https://user-images.githubusercontent.com/93129370/163272926-cd497f78-fb65-41d2-9e5a-1b0d1a214422.png)
 
 
