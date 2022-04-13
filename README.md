@@ -23,12 +23,15 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 
 <h2>Features</h2>
 
+<h3>Existing Features</h3>
+
 * Game Instruction, as is the very important to run any game to have a clear instructions for the palyer.
 ![Instruction](https://user-images.githubusercontent.com/93129370/163263691-d413b1c0-3f7f-4a08-8965-5d63ff91796a.png)
 
-<h3>Existing Features</h3>
 
-* 
+* Clearly organized board for the player to choose his position.
+![board](https://user-images.githubusercontent.com/93129370/163266436-2d8c6b9a-852c-4280-9d2c-bda47a8d7385.png)
+
 
 *
 
