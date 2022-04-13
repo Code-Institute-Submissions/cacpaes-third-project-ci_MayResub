@@ -57,7 +57,7 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 
 
 <h2>Testing</h2>
-<h5>I have manually tested this project by doing the following:</h5>
+<h4>I have manually tested this project by doing the following:</h4>
 
 * Passed the code through a PEP8 linter and confirmed there are no problems
 * Tested in my local terminal and the Conde Institute Heroku terminal
