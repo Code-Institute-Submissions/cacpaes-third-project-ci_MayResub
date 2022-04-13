@@ -40,6 +40,7 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 
 
   - The winner is X!
+  
 ![The winner is X!](https://user-images.githubusercontent.com/93129370/163269307-fdd5731f-9108-4fce-9b5c-cc38d00daae3.png)
 
 
