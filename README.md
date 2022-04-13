@@ -69,6 +69,9 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
    
 ![PEP8](https://user-images.githubusercontent.com/93129370/163272926-cd497f78-fb65-41d2-9e5a-1b0d1a214422.png)
 
+<h2>Bugs</h2>
+
+* I'm having problems with spacing. I fixed this by testing in PEP8 and reading about it in [Flake8 Rules](https://www.flake8rules.com/).
 
 <h2>Deployment</h2>
 
@@ -81,23 +84,22 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 
 * click Deploy.
 
+<h2>Technologies</h2>
+
+* Heroku, used for Deployment.
+* GitHub, used for project control.
+* Gitpod, used for making the project.
 
 <h2>Credits</h2>
 
 * [Code Institute](https://codeinstitute.net/ie/) 
+* [Flake8 Rules](https://www.flake8rules.com/)
 
-<h3>Content</h3>
+<h2>Remaining Bugs</h2>
 
-*
-
-* 
-
-<h3>Media</h3>
-
-* 
+* No Bugs Remained.
 
 <h2>Acknowledgements</h2>
 
 * Code Institute for all the support.
 
-* 
