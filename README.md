@@ -32,8 +32,9 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 * Clearly organized board for the player to choose his position.
 ![board](https://user-images.githubusercontent.com/93129370/163266436-2d8c6b9a-852c-4280-9d2c-bda47a8d7385.png)
 
+* Playing against a friend, the friend can choose a position between 1-9 that has not yet been chosen.
+![position](https://user-images.githubusercontent.com/93129370/163268064-51172f8d-e22b-4c6a-b307-2759d2b81336.png)
 
-*
 
 * 
 
