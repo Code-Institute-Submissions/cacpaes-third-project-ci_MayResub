@@ -73,6 +73,10 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 
 * I'm having problems with spacing. I fixed this by testing in PEP8 and reading about it in [Flake8 Rules](https://www.flake8rules.com/).
 
+<h2>Remaining Bugs</h2>
+
+* No Bugs Remained.
+
 <h2>Deployment</h2>
 
 
@@ -95,9 +99,6 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 * [Code Institute](https://codeinstitute.net/ie/) 
 * [Flake8 Rules](https://www.flake8rules.com/)
 
-<h2>Remaining Bugs</h2>
-
-* No Bugs Remained.
 
 <h2>Acknowledgements</h2>
 
