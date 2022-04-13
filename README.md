@@ -10,15 +10,15 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 
 <h2>How to play</h2>
 
-*  [](#)
+*  The first thing to do is read the instructions and then write "yes" in front of the question "Do you want to play?"
 
-* [](#)
+*  Ask your opponent to play first. The most common is for the first player to use "X", but you can let the person choose between "X" and "O". Each one has to try to form a line with their respective symbol on the squares on the board. If you play first, draw your symbol on the middle square to optimize your chances of winning — as you'll have a better chance (four) of creating a row of three "X"s or "O's".
 
-  - [](#)
+*  Make your move (or ask your opponent to play). After the first step, the opponent draws his respective symbol, which must be different from the previous one. He can try to prevent the opponent from closing a row on the board or focus on his own strategy. Ideally, do both at the same time.
 
-  - [](#)
+*  Alternate moves with your opponent until one of you wins (or draws). The first person to draw three symbols in a row—horizontally, vertically, or diagonally—wins. However, if both players are skilled, the chances of a tie are much higher.
 
-  - [](#)
+*  Keep training. Contrary to what many think, tic-tac-toe is not just about luck. There are several strategies that optimize player skills. Keep training to learn how to use some of them and win (almost) every match.
 
   - [Site owner goals](#site-owner-goals)
 
