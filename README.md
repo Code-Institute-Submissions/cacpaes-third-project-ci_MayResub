@@ -41,22 +41,19 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 
 * The winner is X!
    
-![The winner is X!](https://user-images.githubusercontent.com/93129370/163269307-fdd5731f-9108-4fce-9b5c-cc38d00daae3.png)
+   ![The winner is X!](https://user-images.githubusercontent.com/93129370/163269307-fdd5731f-9108-4fce-9b5c-cc38d00daae3.png)
 
 
 * The winner is O!
   
-![The winner is O!](https://user-images.githubusercontent.com/93129370/163269628-341d2a02-5acb-436e-9a74-8dc56b91f68f.png)
+   ![The winner is O!](https://user-images.githubusercontent.com/93129370/163269628-341d2a02-5acb-436e-9a74-8dc56b91f68f.png)
 
 
 * It is a tie!
   
-![It is a tie!](https://user-images.githubusercontent.com/93129370/163270680-e5e2ec77-4f4e-4659-b00f-fc536c2a8bff.png)
+   ![It is a tie!](https://user-images.githubusercontent.com/93129370/163270680-e5e2ec77-4f4e-4659-b00f-fc536c2a8bff.png)
 
-
-<h3>Resources to be implemented</h3>
-
-* 
+* If there is a winner or Tie! , the game will end , and the player needs to run the game again for keep playing.
 
 *
 
