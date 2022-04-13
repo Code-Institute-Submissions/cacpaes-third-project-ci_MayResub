@@ -12,7 +12,7 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 
 *  The first thing to do is read the instructions and then write "yes" in front of the question "Do you want to play?"
 
-*  Ask your opponent to play first. First player will use "X", and second will use "O". Each one must try to form a line with its respective symbol on the squares of the board. If you play first, draw your symbol in the middle square to optimize your chances of winning - as you'll have a better chance (four) of creating a line of three "X" or "O".
+*  Ask your opponent to play first. The first player will use "X" and the second will use "O". Each one must try to form a line with its respective symbol on the squares on the board.
 
 *  Make your move (or ask your opponent to play). After the first step, the opponent draws his respective symbol, which must be different from the previous one. He can try to prevent the opponent from closing a row on the board or focus on his own strategy. Ideally, do both at the same time.
 
