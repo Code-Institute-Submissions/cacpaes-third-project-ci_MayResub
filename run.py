@@ -123,14 +123,17 @@ def main():
     print('* If no one wins and the board run out of space would be tie!')
     print('* If the same number is chosen, the player passes his turn!')
     print('* To play again just click on RUN PROGRAM!')
-    play = input("Do you want to play? (yes/no) ")
-    if play.lower() == "yes":
-        print("Let's play!")
-    elif play.lower() == "no":
-        print('See you next time!')
-        quit()
-    else:
-        print('Please choose yes/no to start or quit the game')
+    while True:
+        play = input("Do you want to play? (yes/no) ")
+        if play.lower() == "yes":
+            break
+        elif play.lower() == "no":
+            print('See you next time!')
+            quit()
+        else:
+            print('Please choose yes/no to start or quit the game')
+
+    print("Let's play!")
 
     board = ["-", "-", "-",
              "-", "-", "-",
