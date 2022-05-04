@@ -15,7 +15,7 @@ def playerinput(input_board, player):
     """
     while True:
         try:
-            inp = int(input("Enter a number [1, 9]: "))
+            inp = int(input(f"Player '{player}' enter a number [1, 9]: "))
             if inp >= 1 and inp <= 9 and input_board[inp-1] == "-":
                 input_board[inp-1] = player
                 break
