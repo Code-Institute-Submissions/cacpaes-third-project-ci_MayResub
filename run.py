@@ -119,8 +119,8 @@ def start_game():
     print("Let's play!")
 
     board = ["-", "-", "-",
-            "-", "-", "-",
-            "-", "-", "-"]
+             "-", "-", "-",
+             "-", "-", "-"]
 
     currentplayer = "X"
     gamerunning = True
@@ -156,7 +156,7 @@ def main():
     played = False
     while True:
         prompt_string = "Do you want to play (yes/no)?: " \
-            if not played else "Do you want to play again? (yes/no)"
+            if not played else "Do you want to play again (yes/no)?: "
         play = input(prompt_string)
         if play.lower() == "yes":
             played = True
