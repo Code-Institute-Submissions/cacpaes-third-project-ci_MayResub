@@ -15,13 +15,13 @@ def playerinput(input_board, player):
     """
     while True:
         try:
-            inp = int(input("Enter a number 1-9: "))
+            inp = int(input("Enter a number [1, 9]: "))
             if inp >= 1 and inp <= 9 and input_board[inp-1] == "-":
                 input_board[inp-1] = player
                 break
-            print("Invalid value!")
+            print("Please make sure the entered number is between [1, 9].")
         except ValueError:
-            print("Invalid input! Make sure the value is betweet 1 and 9.")
+            print("Invalid input! Make sure the value is betweet [1, 9].")
 
 
 def check_row(index, board):
@@ -155,7 +155,7 @@ def main():
 
     played = False
     while True:
-        prompt_string = "Do you want to play (yes/no)?:" \
+        prompt_string = "Do you want to play (yes/no)?: " \
             if not played else "Do you want to play again? (yes/no)"
         play = input(prompt_string)
         if play.lower() == "yes":
