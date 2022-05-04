@@ -13,11 +13,15 @@ def printboard(board):
 def playerinput(input_board, player):
     """ input to enter a number
     """
-    inp = int(input("Enter a number 1-9: "))
-    if inp >= 1 and inp <= 9 and input_board[inp-1] == "-":
-        input_board[inp-1] = player
-    else:
-        print("Erro!")
+    while True:
+        try:
+            inp = int(input("Enter a number 1-9: "))
+            if inp >= 1 and inp <= 9 and input_board[inp-1] == "-":
+                input_board[inp-1] = player
+                break
+            print("Invalid value!")
+        except ValueError:
+            print("Invalid input! Make sure the value is betweet 1 and 9.")
 
 
 def check_row(index, board):
@@ -31,7 +35,7 @@ def check_row(index, board):
 
 
 def check_col(index, board):
-    """
+    """ Check column
     """
     if board[index] == board[index + 3] and \
             board[index + 3] == board[index + 6] and board[index] != "-":
