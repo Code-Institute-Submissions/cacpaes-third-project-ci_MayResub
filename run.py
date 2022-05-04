@@ -113,35 +113,14 @@ def switchplayer(player):
     return "O" if player == "X" else "X"
 
 
-def main():
-    """Instruction to the game
+def start_game():
     """
-    board = ['     ' for i in range(9)]
-    print('Welcome to Tic Tac Toe!')
-    print('____________Instruction____________')
-    print('* Player needs to choose a position between 1 - 9.')
-    print('1 | 2 | 3')
-    print('4 | 5 | 6')
-    print('7 | 8 | 9')
-    print('* Player will play against a friend.')
-    print('* If no one wins and the board run out of space would be tie!')
-    print('* If the same number is chosen, the player passes his turn!')
-    print('* To play again just click on RUN PROGRAM!')
-    while True:
-        play = input("Do you want to play? (yes/no) ")
-        if play.lower() == "yes":
-            break
-        elif play.lower() == "no":
-            print('See you next time!')
-            quit()
-        else:
-            print('Please choose yes/no to start or quit the game')
-
+    """
     print("Let's play!")
 
     board = ["-", "-", "-",
-             "-", "-", "-",
-             "-", "-", "-"]
+            "-", "-", "-",
+            "-", "-", "-"]
 
     currentplayer = "X"
     gamerunning = True
@@ -157,6 +136,36 @@ def main():
         if not gamerunning:
             break
         gamerunning = check_if_tie(board)
+
+
+def main():
+    """Instruction to the game
+    """
+    board = ['     ' for i in range(9)]
+    print('Welcome to Tic Tac Toe!')
+    print('____________Instruction____________')
+    print('* Player needs to choose a position between 1 - 9.')
+    print('1 | 2 | 3')
+    print('4 | 5 | 6')
+    print('7 | 8 | 9')
+    print('* Player will play against a friend.')
+    print('* If no one wins and the board run out of space would be tie!')
+    print('* If the same number is chosen, the player passes his turn!')
+    print('* To play again just click on RUN PROGRAM!')
+
+    played = False
+    while True:
+        prompt_string = "Do you want to play (yes/no)?:" \
+            if not played else "Do you want to play again? (yes/no)"
+        play = input(prompt_string)
+        if play.lower() == "yes":
+            played = True
+            start_game()
+        elif play.lower() == "no":
+            print('See you next time!')
+            quit()
+        else:
+            print('Please choose yes/no to start or quit the game')
 
 
 main()
