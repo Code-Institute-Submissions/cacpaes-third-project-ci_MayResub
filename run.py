@@ -1,3 +1,4 @@
+import time
 """ Tic Tac Toe
 """
 
@@ -128,6 +129,7 @@ def start_game():
     while gamerunning:
         printboard(board)
         playerinput(board, currentplayer)
+        time.sleep(1)
         gamerunning = check_if_win(board)
         if not gamerunning:
             break
@@ -139,9 +141,9 @@ def start_game():
 
 
 def main():
-    """Instruction to the game
     """
-    board = ['     ' for i in range(9)]
+    Instruction to the game
+    """
     print('Welcome to Tic Tac Toe!')
     print('____________Instruction____________')
     print('* Player needs to choose a position between 1 - 9.')
