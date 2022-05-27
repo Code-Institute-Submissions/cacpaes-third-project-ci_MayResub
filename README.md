@@ -89,7 +89,7 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 * click Deploy.
 
 <h2>Technologies</h2>
-
+* Python libraries used: time
 * Heroku, used for Deployment.
 * GitHub, used for project control.
 * Gitpod, used for making the project.
