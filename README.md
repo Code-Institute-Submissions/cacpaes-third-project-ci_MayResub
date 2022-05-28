@@ -14,7 +14,7 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 
 *  Ask your opponent to play first. The first player will use "X" and the second will use "O". Each one must try to form a line with its respective symbol on the squares on the board.
 
-*  Make your move (or ask your opponent to play). After the first step, the opponent enters the next position which must be different from your opponent's position. If you enter the same position, you pass the turn to your opponent. He can try to prevent the opponent from closing a line on the board or focus on his own strategy. The ideal is to do both at the same time.
+*  Make your move (or ask your opponent to play). After the first step, the opponent chooses the next position which must be different from your opponent's position. He can try to prevent the opponent from closing a line on the board or focus on his own strategy. The ideal is to do both at the same time.
 
 *  Alternate moves with your opponent until one of you wins (or draws). The first person to position  "X" or "O" in a row – horizontally, vertically or diagonally – wins. However, if both players are skilled, the chances of a tie are much higher.
 
@@ -26,7 +26,7 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 <h3>Existing Features</h3>
 
 * Game Instruction, as is the very important to run any game to have a clear instructions for the palyer.
-![Instruction](https://user-images.githubusercontent.com/93129370/163263691-d413b1c0-3f7f-4a08-8965-5d63ff91796a.png)
+![intruction1](https://user-images.githubusercontent.com/93129370/170819296-df017c87-0e88-4ba3-936b-49eeec4a5a47.png)
 
 
 * Clearly organized board for the player to choose his position.
@@ -53,7 +53,7 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
   
    ![It is a tie!](https://user-images.githubusercontent.com/93129370/163270680-e5e2ec77-4f4e-4659-b00f-fc536c2a8bff.png)
 
-* If there is a winner or Tie! , the game will end , and the player needs to run the game again for keep playing.
+* If there is a winner and tie! , the game ends. To continue playing just answer the question "Do you want to play?
 
 
 <h2>Testing</h2>
@@ -62,12 +62,32 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 * Passed the code through a PEP8 linter and confirmed there are no problems
 * Tested in my local terminal and the Conde Institute Heroku terminal
 
+<h3>Navegation and Devices</h3>
+
+* With the project finished, I performed several tests on different browsers and different computers to check the playability and possible faults. No errors were presented during these tests
+
+* Desktop
+
+   - Sony Vaio (Laptop)
+   - Dell XPS (Laptop)
+   - Asus Chromebook (Laptop)
+   - Macbook Air (Laptop)
+   - HP (CPU)
+
+* Browsers
+
+   - Chrome
+   - Firefox
+   - Safari
+   - Edge
+
+
 <h3> Validator Testing </h3>
 
 * [PEP8](http://pep8online.com/) 
    - No erros were returned from PEP8online.com
    
-![PEP8](https://user-images.githubusercontent.com/93129370/163272926-cd497f78-fb65-41d2-9e5a-1b0d1a214422.png)
+![test](https://user-images.githubusercontent.com/93129370/170819457-6448575c-0404-4365-9568-e609719f12b1.png)
 
 <h2>Bugs</h2>
 
@@ -89,9 +109,13 @@ Tic Tac Toe is one of my favorite games, why I wanted to build it in one of the 
 * click Deploy.
 
 <h2>Technologies</h2>
+
 * Python libraries used: time
+
 * Heroku, used for Deployment.
+
 * GitHub, used for project control.
+
 * Gitpod, used for making the project.
 
 <h2>Credits</h2>
