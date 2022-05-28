@@ -152,8 +152,6 @@ def main():
     print('7 | 8 | 9')
     print('* Player will play against a friend.')
     print('* If no one wins and the board run out of space would be tie!')
-    print('* If the same number is chosen, the player passes his turn!')
-    print('* To play again just click on RUN PROGRAM!')
 
     played = False
     while True:
